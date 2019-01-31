@@ -82,9 +82,14 @@ h3 {
 }
 
 h4 {
+<<<<<<< HEAD
   align: center;
   font-weight: bold;
   color: #01296b;
+=======
+  color: grey;
+  text-transform: capitalize;
+>>>>>>> Rachel
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   margin-top: 1.0rem;
