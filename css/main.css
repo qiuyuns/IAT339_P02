@@ -4,9 +4,9 @@
 */
 
 
-* {
+/* * {
   border: 1px solid darkgreen;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -82,7 +82,9 @@ h3 {
 }
 
 h4 {
-  color: grey;
+  align: center;
+  font-weight: bold;
+  color: #01296b;
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
   margin-top: 1.0rem;
