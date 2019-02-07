@@ -99,6 +99,31 @@ p {
   max-width: 1000px;
 }
 
+.event{
+  padding-top: 4rem;
+}
+
+.event h3{
+  text-align: left;
+  padding-left: 7rem;
+}
+
+.event_main{
+  display: flex;
+  padding: 0 7rem;
+}
+
+.event_img{
+  padding-top: 0.5rem;
+  width: 50%;
+}
+
+.event_content p{
+  /* padding-bottom: 0; */
+  width: 80%;
+  bottom: 0;
+}
+
 /* nav a:hover, nav a:focus {
   text-decoration: none;
 } */
