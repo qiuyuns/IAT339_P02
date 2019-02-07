@@ -49,7 +49,8 @@ header {
 .nav-menu a{
   font-size: 1.0rem;
   text-decoration: none;
-  color: #c47f5f;
+  /* color: #c47f5f; */
+  color: #243459;
   /* padding: 0.75rem; */
 }
 
@@ -84,8 +85,8 @@ h3 {
 h4 {
   align: center;
   font-weight: bold;
-  /* color: #01296b;  */
-  color: #c47f5f;  /* beige color */
+  color: #243459; 
+  /* color: #c47f5f;  beige color */
   text-transform: uppercase;
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
