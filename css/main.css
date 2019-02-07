@@ -4,9 +4,9 @@
 */
 
 
-* {
+/* * {
   border: 1px solid darkgreen;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -373,12 +373,22 @@ label {
   CONTACT PAGE css -------------------
 */
 .contact-container {
-  margin: 1.8rem 10%;
+  margin: 1.8rem 8%;
 }
 
 .info-container {
   display: flex;
-  margin: 1rem;
+  margin: 2rem;
+  padding: 0 6%;
+}
+
+.contact-img {
+  width: 40%;
+
+}
+
+.info-content-container {
+  margin-left: 5rem;
 }
 
 
