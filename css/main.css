@@ -84,7 +84,8 @@ h3 {
 h4 {
   align: center;
   font-weight: bold;
-  color: #01296b;
+  /* color: #01296b;  */
+  color: #c47f5f;  /* beige color */
   text-transform: uppercase;
   font-size: 1.25rem;
   margin-bottom: 0.25rem;
@@ -92,7 +93,7 @@ h4 {
 }
 
 p {
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   margin-top: 0;
   max-width: 1000px;
 }
@@ -319,4 +320,25 @@ label {
   text-align: left;
   display: flex;
   flex-direction: column;
+}
+
+.about_main{
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+}
+
+.about_content{
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding: 2%;
+  padding-left: 7.0rem;
+  max-width: 50%;
+}
+
+.about_img{
+  /* padding-top: 1.5rem; */
+  /* padding: 10%; */
+  /* max-width: 25%; */
+  /* display: flex; */
 }
