@@ -4,9 +4,9 @@
 */
 
 
-/* * {
+* {
   border: 1px solid darkgreen;
-} */
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -97,31 +97,6 @@ p {
   font-size: 0.9rem;
   margin-top: 0;
   max-width: 1000px;
-}
-
-.event{
-  padding-top: 4rem;
-}
-
-.event h3{
-  text-align: left;
-  padding-left: 7rem;
-}
-
-.event_main{
-  display: flex;
-  padding: 0 7rem;
-}
-
-.event_img{
-  padding-top: 0.5rem;
-  width: 50%;
-}
-
-.event_content p{
-  /* padding-bottom: 0; */
-  width: 80%;
-  bottom: 0;
 }
 
 /* nav a:hover, nav a:focus {
@@ -368,3 +343,19 @@ label {
   /* max-width: 25%; */
   /* display: flex; */
 }
+
+/*
+  CONTACT PAGE css -------------------
+*/
+.contact-container {
+  margin: 1.8rem 10%;
+}
+
+.info-container {
+  display: flex;
+  margin: 1rem;
+}
+
+
+
+/* -------------------*/
