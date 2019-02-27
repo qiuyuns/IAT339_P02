@@ -4,21 +4,18 @@
 */
 
 
-/* * {
+* {
   border: 1px solid darkgreen;
-} */
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
-  padding: 0 4rem;
-  font-size: 1.25rem;
   margin: 0;
 }
 
 header {
   display: flex;
-  padding: 1% 0;
-  padding-top: 1.5rem;
+  padding: 1.5% 5% 0;
 }
 
 .logo {
@@ -83,7 +80,6 @@ h3 {
 }
 
 h4 {
-  align: center;
   font-weight: bold;
   color: #243459;
   /* color: #c47f5f;  beige color */
@@ -124,9 +120,36 @@ p {
   bottom: 0;
 }
 
+.bottom {
+    background-color: rgb(245, 245, 245);
+    height: 8rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-flow: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+a.footer-button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(80,80,80);
+    text-decoration: none;
+    padding: 1rem;
+    max-width: 40rem;
+}
+
+.credit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
 /* nav a:hover, nav a:focus {
   text-decoration: none;
 } */
+
+/*-----STYLE GUIDE-----*/
 
 #in-text-link a{
   font-size: 1.0rem;
@@ -378,19 +401,59 @@ label {
 
 .info-container {
   display: flex;
-  margin: 2rem;
-  padding: 0 6%;
+  margin-top: 3rem;
+  justify-content: center;
+  padding-left: 5%;
 }
 
 .contact-img {
-  width: 40%;
+  width: 35%;
 
 }
 
 .info-content-container {
   margin-left: 5rem;
+  margin-top: 5%;
 }
 
+.message-container {
+  margin: 3rem 10%;
+}
 
+#contact-form {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.form-element {
+  margin: 0.8rem 0;
+}
+
+.label {
+  padding: 0.2rem;
+  padding-right: 1rem;
+  display: inline-block;
+  width: 10%;
+  font-size: medium;
+  color: #243459;
+}
+
+input[type=text], input[type=email] {
+  /* border: 0.05rem solid rgb(90,90,90); */
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 70%;
+  outline: none;
+  transition: border 0.4s;
+}
+
+#contact-form textarea {
+  width: 70%;
+  padding: 0.4rem 0.5rem;
+  margin-right: 0;
+  /* border: 0.05rem solid rgb(90,90,90); */
+  outline: none;
+  resize: none;
+}
 
 /* -------------------*/
