@@ -24,6 +24,11 @@ header {
   align: center;
 }
 
+.logo a{
+  text-decoration: none;
+  color: #243459;
+}
+
 #interactive_elements{
   display: flex;
   flex-direction: column;;
@@ -39,7 +44,7 @@ header {
   width: 70%;
 }
 
-.nav-menu li {
+.nav-menu li{
   padding: 1rem;
 }
 
@@ -52,7 +57,13 @@ header {
 }
 
 .nav-menu a:hover{
-  text-decoration: line-through;
+  color: #0124d2;
+  text-decoration: overline;
+}
+
+.nav-menu a:active{
+  color: #0124d2;
+  text-decoration: overline;
 }
 
 .element {
@@ -456,4 +467,114 @@ input[type=text], input[type=email] {
   resize: none;
 }
 
-/* -------------------*/
+/* ITEM PAGE css */
+
+.item-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px;
+  display: flex;
+}
+
+.left-column {
+  width: 55%;
+  position: relative;
+}
+
+.right-column {
+  width: 45%;
+  margin-top: 60px;
+}
+
+/* Left Column */
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.left-column img.active {
+  opacity: 1;
+}
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+.product-description span {
+  font-size: 12px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+}
+
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: #43474D;
+  margin-right: 20px;
+}
+
+.add-to-cart{
+  padding-top: 10px;
+}
+
+.cart-btn {
+  display: inline-block;
+  background-color: #4564ad;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #243459;
+}
+
+@media (max-width: 940px) {
+  .item-container {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .left-column img {
+    width: 300px;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+
+@media (max-width: 535px) {
+  .left-column img {
+    width: 220px;
+    top: -85px;
+  }
+}
