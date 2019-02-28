@@ -4,9 +4,9 @@
 */
 
 
-*{
+/* *{
   border: 1px solid darkgreen;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -374,6 +374,18 @@ label {
   flex-direction: column;
 }
 
+.cart{
+  display: block;
+  margin-top: 3rem;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.cart-content-container{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
 .cart p{
   margin-top: -1rem;
   display: inline-block;
@@ -387,25 +399,18 @@ label {
   float:left
 }
 
-/* .payment .control-label{
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.payment{
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .payment{
-  padding: 0.5rem;
-} */
-
 .payment {
   margin: 3rem 10%;
 }
+
+.cart-label {
+  padding: 0;
+  display: inline-block;
+  width: 5%;
+  font-size: medium;
+  color: #243459;
+}
+
 
 .pay-label {
   padding: 0.2rem;
@@ -419,6 +424,14 @@ label {
 .payment-form {
   text-align: left;
   padding-top: 1rem;
+}
+
+input[type=quantity]{
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 10%;
+  outline: none;
+  transition: border 0.4s;
 }
 
 .payment .button{
