@@ -4,9 +4,9 @@
 */
 
 
-* {
+/* * {
   border: 1px solid darkgreen;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -57,7 +57,8 @@ header {
 }
 
 .nav-menu a:hover{
-  color: #0124d2;
+  /* color: #0124d2; */
+  color: #4564ad;
   text-decoration: overline;
 }
 
@@ -185,7 +186,7 @@ a.footer-button {
 } */
 
 input:hover{
-  background-color: #e1bfaf;
+  background-color: #a9b5d1;
 }
 input:focus{
   background-color: white;
@@ -202,7 +203,7 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
-/* Styling for the navigation button */
+/* Styling for the navigation  */
 .button-nav{
   display: inline-block;
   padding: 0.5rem;
@@ -274,7 +275,7 @@ code {
 
 
 .button {
-  background-color: #C47F5F;
+  background-color: #4564ad;
   border: none;
   color: white;
   padding: 10px 24px;
@@ -565,10 +566,11 @@ input[type=text], input[type=email] {
   background-color: #243459;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 907px) {
   .item-container {
     flex-direction: column;
     margin-top: 60px;
+    display: inline-block;
   }
 
   .left-column,
@@ -582,6 +584,11 @@ input[type=text], input[type=email] {
     top: -65px;
     left: initial;
   }
+
+  .row{
+    display: inline-block;
+  }
+
 }
 
 @media (max-width: 535px) {
