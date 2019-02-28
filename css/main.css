@@ -161,6 +161,9 @@ a.footer-button {
 } */
 
 /*-----STYLE GUIDE-----*/
+.content-padding {
+  padding: 3rem 6%;
+}
 
 #in-text-link a{
   font-size: 1.0rem;
@@ -319,15 +322,24 @@ label {
 
 
 /* produc web page css */
+.collection-container {
+  padding: 3rem 2rem;
+}
+
+.collection-container h4{
+  margin-left: 6%;
+
+}
 
 .row {
   display: flex;
-  margin-top: 1.0rem;
+  padding: 5%;
+  padding-top: 2%;
 }
 
 .column {
   flex: 33.33%;
-  padding: 5px;
+  padding: 1%;
 }
 
 .name-tag{
