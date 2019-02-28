@@ -4,9 +4,9 @@
 */
 
 
-/* * {
+*{
   border: 1px solid darkgreen;
-} */
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -86,7 +86,7 @@ h2 {
 
 h3 {
   color: darkgrey;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-style: italic;
   margin-top: 0.8rem;
 }
@@ -113,23 +113,34 @@ p {
 
 .event h3{
   text-align: left;
-  padding-left: 7rem;
+  /* left: 50px; */
+}
+
+.event-title{
+  margin-left: 35%;
+  margin-bottom: 0%;
 }
 
 .event_main{
-  display: flex;
+  display: inline-block;
   padding: 0 7rem;
+  padding-bottom: 70px;
 }
 
 .event_img{
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 0.5rem;
   width: 50%;
 }
 
-.event_content p{
+.event_content{
+  border: 3px solid #243459;
+  margin-top: -20px;
+  margin-left: 35%;
   /* padding-bottom: 0; */
-  width: 80%;
-  bottom: 0;
+  width: 40%;
+  padding: 10px;
 }
 
 .bottom {
@@ -385,15 +396,34 @@ label {
   flex-direction: column;
 } */
 
-.payment{
+/* .payment{
   padding: 0.5rem;
+} */
+
+.payment {
+  margin: 3rem 10%;
 }
-.controls{
-  max-width: 20%;
+
+.pay-label {
+  padding: 0.2rem;
+  padding-right: 1rem;
+  display: inline-block;
+  width: 15%;
+  font-size: medium;
+  color: #243459;
+}
+
+.payment-form {
   text-align: left;
-  display: flex;
-  flex-direction: column;
+  padding-top: 1rem;
 }
+
+.payment .button{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 
 .about_main{
   padding: 10%;
@@ -462,7 +492,7 @@ label {
   color: #243459;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], input[type=username], input[type=cardnumber] {
   /* border: 0.05rem solid rgb(90,90,90); */
   padding: 0.4rem 0.5rem;
   margin-bottom: 0.5rem;
@@ -483,9 +513,11 @@ input[type=text], input[type=email] {
 /* ITEM PAGE css */
 
 .item-container {
+  overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
   padding: 35px;
+  padding-bottom: 70px;
   display: flex;
 }
 
@@ -568,9 +600,8 @@ input[type=text], input[type=email] {
 
 @media (max-width: 907px) {
   .item-container {
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 60px;
-    display: inline-block;
   }
 
   .left-column,
@@ -579,21 +610,25 @@ input[type=text], input[type=email] {
   }
 
   .left-column img {
-    width: 300px;
-    right: 0;
-    top: -65px;
-    left: initial;
+    width: 100%;
+    /* right: 0; */
+    /* top: -65px; */
+    /* left: initial; */
   }
 
   .row{
     display: inline-block;
   }
 
+  .about_main{
+    display: inline-block;
+  }
+
 }
 
-@media (max-width: 535px) {
+/* @media (max-width: 535px) {
   .left-column img {
     width: 220px;
     top: -85px;
   }
-}
+} */
