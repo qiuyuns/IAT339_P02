@@ -19,9 +19,8 @@ header {
 }
 
 .logo {
-  width: 30%;
   margin: 0;
-  align: center;
+  width: -webkit-fill-available;
 }
 
 .logo a{
@@ -59,12 +58,12 @@ header {
 .nav-menu a:hover{
   /* color: #0124d2; */
   color: #4564ad;
-  text-decoration: overline;
+  border-top: 0.2rem #0124d2 solid;
 }
 
 .nav-menu a:active{
   color: #0124d2;
-  text-decoration: overline;
+  border-top: 0.2rem #0124d2 solid;
 }
 
 .element {
@@ -145,7 +144,7 @@ p {
 
 .bottom {
     background-color: rgb(245, 245, 245);
-    height: 8rem;
+    height: 6rem;
     padding-top: 4rem;
     display: flex;
     flex-flow: wrap;
@@ -160,6 +159,10 @@ a.footer-button {
     text-decoration: none;
     padding: 1rem;
     max-width: 40rem;
+}
+
+a.footer-button:hover {
+  color: #243459;
 }
 
 .credit {
@@ -598,7 +601,33 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
   background-color: #243459;
 }
 
+
+/*-----RESPONSIVE------  */
+
 @media (max-width: 907px) {
+
+  header {
+   display: block;
+   padding: 1.5% 5% 0;
+ }
+
+ .logo {
+   width: 100%;
+   margin: 0;
+   text-align: center;
+ }
+
+ .nav-menu {
+   width: 100%;
+   display: block;
+ text-align: center;
+   padding-left: 0;
+ }
+
+ .nav-menu li {
+   padding: .7rem;
+ }
+
   .item-container {
     flex-direction: row;
     margin-top: 60px;
@@ -624,6 +653,16 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
     display: inline-block;
   }
 
+  /* contact page responsive */
+
+  .info-container {
+    display:block;
+    justify-content: center;
+  }
+
+  .info-content-container {
+    margin-left:
+  }
 }
 
 /* @media (max-width: 535px) {
