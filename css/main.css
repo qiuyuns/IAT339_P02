@@ -4,9 +4,9 @@
 */
 
 
-*{
+/* *{
   border: 1px solid darkgreen;
-}
+} */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -88,6 +88,7 @@ h3 {
   font-size: 1.8rem;
   font-style: italic;
   margin-top: 0.8rem;
+  margin-bottom: auto;
 }
 
 h4 {
@@ -171,9 +172,6 @@ a.footer-button:hover {
     padding-top: 1rem;
 }
 
-/* nav a:hover, nav a:focus {
-  text-decoration: none;
-} */
 
 /*-----STYLE GUIDE-----*/
 .content-padding {
@@ -189,15 +187,6 @@ a.footer-button:hover {
 #in-text-link a:hover{
   text-decoration: line-through;
 }
-
-/* #image-link a{
-  color:red;
-}
-
-#image-link a:hover, a:focus{
-  background-color: blue;
-  text-decoration: none;
-} */
 
 input:hover{
   background-color: #a9b5d1;
@@ -372,6 +361,18 @@ label {
 .container{
   display: flex;
   flex-direction: column;
+  margin-top: 3rem;
+}
+
+.cart{
+  display: flex;
+  /* margin-left: 10%; */
+  margin:3rem 10%;
+}
+
+.cart-left{
+  width: 20%;
+  padding: 0;
 }
 
 .cart p{
@@ -379,32 +380,28 @@ label {
   display: inline-block;
   position: relative;
 }
+.cart-content-container{
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.quantity-container{
+  display: flex;
+}
 
 .cart-img{
-  vertical-align: middle;
-  margin: 1.0rem;
-  display:inline-block;
-  float:left
+  width: 100%;
 }
-
-/* .payment .control-label{
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-}
-
-.payment{
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .payment{
-  padding: 0.5rem;
-} */
 
 .payment {
-  margin: 3rem 10%;
+  margin: 0.5rem 10%;
+}
+
+.cart-label {
+  padding: 0;
+  display: inline-block;
+  font-size: medium;
+  color: #243459;
 }
 
 .pay-label {
@@ -418,7 +415,16 @@ label {
 
 .payment-form {
   text-align: left;
-  padding-top: 1rem;
+}
+
+input[type=quantity]{
+  border: 0.05rem solid rgb(190,190,190);
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  width: 10%;
+  outline: none;
+  transition: border 0.4s;
 }
 
 .payment .button{
@@ -427,7 +433,6 @@ label {
   justify-content: center;
 }
 
-
 .about_main{
   padding: 10%;
   display: flex;
@@ -435,19 +440,11 @@ label {
 }
 
 .about_content{
-  /* display: flex; */
-  /* flex-direction: row; */
   padding: 2%;
   padding-left: 7.0rem;
   max-width: 50%;
 }
 
-.about_img{
-  /* padding-top: 1.5rem; */
-  /* padding: 10%; */
-  /* max-width: 25%; */
-  /* display: flex; */
-}
 
 /*
   CONTACT PAGE css -------------------
@@ -465,7 +462,6 @@ label {
 
 .contact-img {
   width: 35%;
-
 }
 
 .info-content-container {
@@ -496,7 +492,7 @@ label {
 }
 
 input[type=text], input[type=email], input[type=username], input[type=cardnumber] {
-  /* border: 0.05rem solid rgb(90,90,90); */
+  border: 0.05rem solid rgb(190,190,190);
   padding: 0.4rem 0.5rem;
   margin-bottom: 0.5rem;
   width: 70%;
@@ -508,7 +504,7 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
   width: 70%;
   padding: 0.4rem 0.5rem;
   margin-right: 0;
-  /* border: 0.05rem solid rgb(90,90,90); */
+  border: 0.05rem solid rgb(190,190,190);
   outline: none;
   resize: none;
 }
@@ -608,7 +604,7 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
 
   header {
    display: block;
-   padding: 1.5% 5% 0;
+   padding: 0;
  }
 
  .logo {
@@ -620,8 +616,9 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
  .nav-menu {
    width: 100%;
    display: block;
- text-align: center;
+   text-align: center;
    padding-left: 0;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
  }
 
  .nav-menu li {
@@ -640,9 +637,6 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
 
   .left-column img {
     width: 100%;
-    /* right: 0; */
-    /* top: -65px; */
-    /* left: initial; */
   }
 
   .row{
@@ -654,20 +648,64 @@ input[type=text], input[type=email], input[type=username], input[type=cardnumber
   }
 
   /* contact page responsive */
+  .contact-container {
+    margin-top: 4rem;
+  }
 
   .info-container {
     display:block;
-    justify-content: center;
+    text-align: center;
+    padding: 0;
+    padding-top: 2rem;
+    margin: 0;
   }
 
   .info-content-container {
-    margin-left:
+    margin-top: 2%;
+    margin-left: auto;
+  }
+
+  .contact-img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .label {
+    font-size: small;
+  }
+
+
+/* ----checkout----*/
+  .cart{
+    display: block;
+  }
+
+  .cart-left{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .cart-label{
+    font-size: small;
+  }
+
+  .cart-content-container {
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+/* ----footer---- */
+
+  .bottom {
+    padding-top: 1rem;
+    height: auto;
+  }
+
+  .credit {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
   }
 }
-
-/* @media (max-width: 535px) {
-  .left-column img {
-    width: 220px;
-    top: -85px;
-  }
-} */
